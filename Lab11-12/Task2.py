@@ -1,7 +1,6 @@
-from cryptography.hazmat.primitives.asymmetric import rsa, padding # type: ignore
-from cryptography.hazmat.primitives import hashes, serialization # type: ignore
-from cryptography.exceptions import InvalidSignature # type: ignore
-
+from cryptography.hazmat.primitives.asymmetric import rsa, padding 
+from cryptography.hazmat.primitives import hashes, serialization 
+from cryptography.exceptions import InvalidSignature 
 # 1. Generate RSA key pair
 private_key = rsa.generate_private_key(
     public_exponent=65537,
